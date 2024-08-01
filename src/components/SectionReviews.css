@@ -1,0 +1,34 @@
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-info {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.person-img {
+  border: .3rem solid var(--main-color);
+  border-radius: 50%;
+  width: 15rem;
+}
+
+
+/* .person {
+  border-radius: 50%;
+  width: 15rem;
+  float: left;
+  margin: 0 2rem 0.6rem 0;
+} */
+
+/* 768px */
+@media only screen and (min-width: 48rem) {
+  .person-info {
+    
+  }
+}

@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 1rem;
+  height: var(--header-height);
+}
+
+.logo {
+  height: 4.5rem;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar.show {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.navbar.show ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  padding-block: 1rem;
+  gap: 2rem;
+}
+
+.navbar.show ul li:last-child a {
+  color: var(--white-color);
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.navbar.show ul li:last-child a:hover {
+  background-color: var(--main-color-brighter);
+}
+
+.toggle-button {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19px;
+  border: 1px solid var(--white-color);
+  border-radius: 1rem;
+}
+
+.toggle-button .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--main-color);
+  transition: transform 0.4s ease;
+}
+
+.toggle-button.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* 768px */
+@media only screen and (min-width: 48rem) {
+  .navbar {
+    display: flex;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+    gap: 1.25rem;
+  }
+
+  .navbar ul li:last-child a {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar ul li:last-child a:hover {
+    background-color: var(--main-color-brighter);
+  }
+
+  .navbar.show {
+    display: none;
+  }
+
+  .headline-chapter {
+    text-align: left;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .header-right {
+    margin-right: 10%;
+    display: flex;
+  }
+
+  .header-right ul {
+    gap: 1.75rem;
+  }
+}
+
+/* 1024px */
+@media only screen and (min-width: 64rem) {
+  .header {
+    padding: 1rem 10%;
+  }
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+  .header {
+    padding: 1rem 18%;
+  }
+}
