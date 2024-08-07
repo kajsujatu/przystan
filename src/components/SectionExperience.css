@@ -1,3 +1,16 @@
+.section-experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-experience p {
+  padding: 0 1rem;
+}
+
+.section-experience .btn-round {
+  margin-top: 0.5rem;
+}
+
 .certificates {
   display: flex;
   justify-content: center;
@@ -22,11 +35,25 @@
   color: var(--main-color) !important;
 }
 
+.mail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 640px */
 @media only screen and (min-width: 40rem) {
+  .section-experience p {
+    padding: 0;
+  }
   .certificate-item {
     height: 13rem;
     width: auto;
     cursor: pointer;
+  }
+
+  .mail-container {
+    flex-direction: row;
+    column-gap: 0.75rem;
   }
 }

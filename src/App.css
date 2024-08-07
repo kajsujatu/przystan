@@ -1,27 +1,42 @@
-.sections-container {
+.sections-container-full {
   display: flex;
   flex-direction: column;
+}
+
+.sections-container {
+  display: flex;
   gap: 0.5rem;
   padding: 1rem;
 }
 
 /* 640px */
 @media only screen and (min-width: 40rem) {
-  .sections-container {
+  .sections-container,
+  .section-full-container {
     padding: 1.5rem 5%;
+  }
+}
+
+/* 768px */
+@media only screen and (min-width: 48rem) {
+  .sections-container,
+  .section-full-container {
+    column-gap: 1.5rem;
   }
 }
 
 /* 1024px */
 @media only screen and (min-width: 64rem) {
-  .sections-container {
+  .sections-container,
+  .section-full-container {
     padding: 1.5rem 10%;
   }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .sections-container {
+  .sections-container,
+  .section-full-container {
     padding: 1.5rem 18%;
   }
 }

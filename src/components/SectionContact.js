@@ -23,29 +23,26 @@ function SectionContact() {
   };
 
   return (
-    <section className='section-contact' id='kontakt'>
+    <section className='section-contact sections-container' id='kontakt'>
       <h2 className='headline-chapter'>Kontakt</h2>
       <div className='contact-info'>
         <div className='contact-data'>
           <p>
-            Telefon:{' '}
-            <b>
-              <a href='tel:+48607929329'>607 929 329</a>
-            </b>
+            Napisz do mnie bezpośrednio lub wypełnij formularz, aby umówić się
+            na rozmowę.
           </p>
-          <p>
-            Mail:{' '}
-            <b>
-              <a href='mailto:przystan.zmiany.zawodowej@gmail.com'>
-                przystan.zmiany.zawodowej@gmail.com
-              </a>
-            </b>
-          </p>
-          <p>Poznań</p>
-          <p>
-            Napisz do mnie, żeby umówić się na rozmowę. Oddzwonię do Ciebie w
-            ciągu 24h.
-          </p>
+          <p>Odezwę się do Ciebie w ciągu 24h.</p>
+
+          <a href='mailto:przystan.zmiany.zawodowej@gmail.com'>
+            <div className='mail-container'>
+              <img
+                className='icon'
+                src='/robocza/img/icon-mail.svg'
+                alt='ikona maila'
+              ></img>
+              przystan.zmiany.zawodowej@gmail.com
+            </div>
+          </a>
         </div>
         <div className='contact-form'>
           <form className='' ref={form} onSubmit={sendEmail}>
@@ -74,7 +71,11 @@ function SectionContact() {
             <button type='reset'>Wyczyść</button>
           </form>
         </div>
-        <img className='contact-img' src='img/1258.jpg'></img>
+        <img
+          className='contact-img'
+          alt='Zdjęcie przedstawiające Agnieszkę Baranowską na tle alejki z drzewami.'
+          src='img/1258.jpg'
+        ></img>
       </div>
     </section>
   );

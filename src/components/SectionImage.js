@@ -15,25 +15,34 @@ function SectionImage() {
             </button>
           </a>
           <div className='icons'>
-            <a href=''>
+            <a
+              href='https://www.facebook.com/Przystan.Zmiany.Zawodowej'
+              target='_blank' rel="noreferrer"
+            >
               <img
                 className='icon'
                 src='/robocza/img/icon-facebook.svg'
-                alt='ikona facebook'
+                alt='ikona facebooka'
               ></img>
             </a>
-            <a href=''>
+            <a
+              href='https://www.instagram.com/przystan_zmiany_zawodowej'
+              target='_blank' rel="noreferrer"
+            >
               <img
                 className='icon'
                 src='/robocza/img/icon-instagram.svg'
-                alt='ikona instagram'
+                alt='ikona instagrama'
               ></img>
             </a>
-            <a href=''>
+            <a
+              href='https://www.linkedin.com/in/agnieszka-baranowska-66a07b74/'
+              target='_blank' rel="noreferrer"
+            >
               <img
                 className='icon'
                 src='/robocza/img/icon-linkedin.svg'
-                alt='ikona linkedin'
+                alt='ikona linkedina'
               ></img>
             </a>
           </div>

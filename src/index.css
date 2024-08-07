@@ -82,7 +82,8 @@ a:hover {
 
 .headline-chapter {
   color: var(--main-color);
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* 640px */
@@ -90,13 +91,15 @@ a:hover {
   h1 {
     font-size: var(--fs-5);
   }
+
+  .headline-chapter {
+    text-align: left;
+  }
 }
 
 /* 768px */
 @media only screen and (min-width: 48rem) {
-  .headline-chapter {
-    text-align: left;
-  }
+
 }
 
 /* 1024px */
